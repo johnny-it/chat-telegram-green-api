@@ -92,3 +92,7 @@ npm run build
 - История ограничена сообщениями текущей сессии; журналы GREEN-API не загружаются.
 - Успешный ответ `SendMessage` означает постановку сообщения в очередь, а не гарантированную доставку получателю.
 - GREEN-API Telegram находится в beta-версии, поэтому контракт сервиса может измениться.
+
+## Скриншоты
+
+<img width="3840" height="2160" alt="Chat online" src="https://github.com/user-attachments/assets/90534f22-a5d0-466f-80fe-ca27a0a99eac" />
