@@ -1,0 +1,30 @@
+.page { min-height: 100dvh; display: grid; place-items: center; padding: 32px 20px; background: linear-gradient(145deg, #f7faff 0%, #eef4ff 100%); }
+.card { width: min(100%, 450px); padding: 44px 42px 38px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 18px; box-shadow: 0 24px 70px rgb(23 54 112 / 10%); }
+.brand { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--color-text); font-size: 24px; font-weight: 750; }
+.logo { width: 42px; color: var(--color-primary); }
+.heading { margin: 34px 0 32px; text-align: center; }
+.heading h1 { margin: 0 0 12px; font-size: 26px; line-height: 1.2; letter-spacing: -0.025em; }
+.heading p { margin: 0; color: var(--color-text-secondary); font-size: 14px; line-height: 1.55; }
+.form { display: grid; gap: 20px; }
+.field { display: grid; gap: 8px; color: var(--color-text); font-size: 13px; font-weight: 650; }
+.field input { width: 100%; height: 48px; padding: 0 14px; border: 1px solid var(--color-border-strong); border-radius: 10px; color: var(--color-text); background: white; font: 400 15px/1 var(--font-sans); transition: border-color 160ms ease, box-shadow 160ms ease; }
+.field input:focus { border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-primary-soft); outline: none; }
+.field input[aria-invalid='true'] { border-color: var(--color-danger); }
+.field input::placeholder { color: #91a0b6; }
+.passwordField { position: relative; }
+.passwordField input { padding-right: 48px; }
+.eyeButton { position: absolute; inset: 0 5px 0 auto; width: 42px; display: grid; place-items: center; border: 0; background: transparent; color: var(--color-text-secondary); cursor: pointer; }
+.eyeButton svg { width: 20px; }
+.error { display: flex; align-items: flex-start; gap: 8px; margin: -4px 0 0; color: var(--color-danger); font-size: 13px; line-height: 1.4; }
+.error svg { width: 17px; min-width: 17px; }
+.submit { height: 48px; display: flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 10px; color: white; background: var(--color-primary); box-shadow: 0 9px 22px rgb(37 99 235 / 22%); font: 650 15px/1 var(--font-sans); cursor: pointer; transition: background 160ms ease; }
+.submit:hover:not(:disabled) { background: var(--color-primary-hover); }
+.submit:disabled { opacity: .72; cursor: wait; }
+.spinner { width: 16px; height: 16px; border: 2px solid rgb(255 255 255 / 45%); border-top-color: white; border-radius: 50%; animation: spin .7s linear infinite; }
+.privacy { margin: 18px 0 0; text-align: center; color: var(--color-text-muted); font-size: 12px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (max-width: 520px) {
+  .page { padding: 0; background: white; align-items: stretch; }
+  .card { width: 100%; min-height: 100dvh; padding: 56px 24px 30px; border: 0; border-radius: 0; box-shadow: none; display: flex; flex-direction: column; justify-content: center; }
+  .heading { margin-top: 42px; }
+}
