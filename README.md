@@ -36,7 +36,7 @@
 1. Откройте терминал и перейдите в папку проекта:
 
    ```bash
-   cd C:\Projects\chat-online
+   cd chat-telegram-green-api
    ```
 
 2. Установите зависимости:
